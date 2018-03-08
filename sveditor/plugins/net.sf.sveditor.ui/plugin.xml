@@ -8,6 +8,7 @@
             class="net.sf.sveditor.ui.editor.SVEditor"
             contributorClass="net.sf.sveditor.ui.editor.SVActionContributor"
             default="true"
+            extensions="sv, svh, svp, svi,v, vl, vlog, vh, vp, vs, v95, v95p, va, vams"
             icon="icons/vlog_16_16.gif"
             id="net.sf.sveditor.ui.editor"
             name="SystemVerilog Editor">
@@ -26,6 +27,7 @@
             class="net.sf.sveditor.ui.argfile.editor.SVArgFileEditor"
             contributorClass="net.sf.sveditor.ui.argfile.editor.SVArgFileActionContributor"
             default="true"
+            extensions="f, F, args, irunargs, flist"
             icon="icons/eview16/configs.gif"
             id="net.sf.sveditor.ui.argfile.editor"
             name="SystemVerilog Argument File Editor">

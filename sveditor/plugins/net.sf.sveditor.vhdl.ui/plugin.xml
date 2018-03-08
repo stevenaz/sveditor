@@ -7,6 +7,7 @@
             class="net.sf.sveditor.vhdl.ui.editor.VHDLEditor"
             contributorClass="net.sf.sveditor.vhdl.ui.editor.VhdlActionContributor"
             default="false"
+            extensions="vhd, vhdl"
             icon="icons/vhd_16_16.png"
             id="net.sf.sveditor.vhdl.ui.VhdlEditor"
             name="VHDL Editor">
