@@ -8,18 +8,18 @@
             class="net.sf.sveditor.ui.editor.SVEditor"
             contributorClass="net.sf.sveditor.ui.editor.SVActionContributor"
             default="true"
-            extensions="sv, svh, svp, svi,v, vl, vlog, vh, vp, vs, v95, v95p, va, vams"
+            extensions="sv, svh, svp, svi, v, vl, vlog, vh, vp, vs, v95, v95p, va, vams"
             icon="icons/vlog_16_16.gif"
             id="net.sf.sveditor.ui.editor"
             name="SystemVerilog Editor">
          <contentTypeBinding
-               contentTypeId="net.sf.sveditor.core.systemverilog">
+               contentTypeId="net.sf.sveditor.core.verilog.ctid">
          </contentTypeBinding>
          <contentTypeBinding
-               contentTypeId="net.sf.sveditor.core.verilog">
+               contentTypeId="systemverilog">
          </contentTypeBinding>
          <contentTypeBinding
-               contentTypeId="net.sf.sveditor.core.verilogams">
+               contentTypeId="verilogams">
          </contentTypeBinding>
       </editor>
 
@@ -32,7 +32,7 @@
             id="net.sf.sveditor.ui.argfile.editor"
             name="SystemVerilog Argument File Editor">
          <contentTypeBinding
-               contentTypeId="net.sf.sveditor.core.argfile">
+               contentTypeId="net.sf.sveditor.core.argfile.ctid">
          </contentTypeBinding>
       </editor>
    </extension>
@@ -40,14 +40,14 @@
          point="org.eclipse.core.filebuffers.documentSetup">
       <participant
             class="net.sf.sveditor.ui.editor.SVDocumentSetupParticipant"
-            contentTypeId="net.sf.sveditor.core.systemverilog">
+            contentTypeId="net.sf.sveditor.core.verilog.ctid">
       </participant>
    </extension>
    <extension
          point="org.eclipse.core.filebuffers.documentSetup">
       <participant
             class="net.sf.sveditor.ui.argfile.editor.SVArgFileDocSetupParticipant"
-            contentTypeId="net.sf.sveditor.core.argfile">
+            contentTypeId="net.sf.sveditor.core.argfile.ctid">
       </participant>
    </extension>
    <extension
@@ -960,7 +960,7 @@
 	                        type="org.eclipse.core.resources.IFile">
 	                     <test
 	                           property="org.eclipse.core.resources.contentTypeId"
-	                           value="net.sf.sveditor.core.argfile">
+	                           value="net.sf.sveditor.core.argfile.ctid">
 	                     </test>
 	                  </adapt>
 	               </iterate>
@@ -1085,7 +1085,7 @@ endclass
          point="org.eclipse.compare.contentMergeViewers">
       <contentTypeBinding
             contentMergeViewerId="net.sf.sveditor.ui.compareMergeViewer"
-            contentTypeId="net.sf.sveditor.core.systemverilog">
+            contentTypeId="net.sf.sveditor.core.verilog.ctid">
       </contentTypeBinding>
       <viewer
             class="net.sf.sveditor.ui.compare.SVCompareViewerCreator"
@@ -1166,7 +1166,7 @@ endclass
             id="net.sf.sveditor.ui.compareViewer">
       </viewer>
       <contentTypeBinding
-            contentTypeId="net.sf.sveditor.core.systemverilog"
+            contentTypeId="net.sf.sveditor.core.verilog.ctid"
             contentViewerId="net.sf.sveditor.ui.compareViewer">
       </contentTypeBinding>
    </extension>
@@ -1405,11 +1405,11 @@ endclass
          point="org.eclipse.core.filebuffers.annotationModelCreation">
       <factory
             class="net.sf.sveditor.ui.argfile.editor.SVArgFileAnnotationModelFactory"
-            contentTypeId="net.sf.sveditor.core.argfile">
+            contentTypeId="net.sf.sveditor.core.argfile.ctid">
       </factory>
       <factory
             class="net.sf.sveditor.ui.editor.SVEditorAnnotationModelFactory"
-            contentTypeId="net.sf.sveditor.core.systemverilog">
+            contentTypeId="net.sf.sveditor.core.verilog.ctid">
       </factory>
    </extension>
    <extension

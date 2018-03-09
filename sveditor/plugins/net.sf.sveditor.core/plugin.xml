@@ -9,12 +9,12 @@
          point="org.eclipse.core.contenttype.contentTypes">
       <content-type
             base-type="org.eclipse.core.runtime.text"
-            id="verilog"
+            id="net.sf.sveditor.core.verilog.ctid"
             name="Verilog"
             priority="normal">
       </content-type>
       <content-type
-            base-type="net.sf.sveditor.core.verilog"
+            base-type="net.sf.sveditor.core.verilog.ctid"
             id="systemverilog"
             name="SystemVerilog"
             priority="normal">
@@ -25,7 +25,7 @@
       </content-type>
       <content-type
             base-type="org.eclipse.core.runtime.text"
-            id="net.sf.sveditor.core.argfile"
+            id="net.sf.sveditor.core.argfile.ctid"
             name="SystemVerilog Argument File"
             priority="normal">
          <property
@@ -34,7 +34,7 @@
          </property>
       </content-type>
       <content-type
-            base-type="net.sf.sveditor.core.verilog"
+            base-type="net.sf.sveditor.core.verilog.ctid"
             id="verilogams"
             name="VerilogAMS"
             priority="normal">
